@@ -1,6 +1,16 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+def findMedian(numList):
+    midVal = len(numList)//2
+    numList.sort()
+    if len(numList)%2 == 0:
+        med = (numList[midVal -1] + numList[midVal])/2
+    else:
+        med = numList[midVal]
+    print(med)
+    return med
+
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -10,3 +20,4 @@ while True:
     else:
         break
 print(numbers)
+
