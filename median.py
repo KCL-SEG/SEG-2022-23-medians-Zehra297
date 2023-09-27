@@ -21,3 +21,4 @@ while True:
         break
 print(numbers)
 
+findMedian(numbers)
